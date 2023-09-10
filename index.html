@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./lib/background.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/style.css" />
+    <title>IMT Kalkulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>IMT Kalkulator <i class="fa-solid fa-weight-scale fa-lg"></i></h2>
+      <form id="form">
+        <p class="inputs">
+          <label for="name">Nama Panggilan (string)</label>
+          <input type="text" id="name" name="name" required />
+        </p>
+        <div class="wrap">
+          <p class="inputs">
+            <label>Tinggi Badan (cm)</label>
+            <input type="number" id="height" min="1" />
+          </p>
+          <p class="inputs">
+            <label>Berat Badan (kg)</label>
+            <input type="number" id="weight" min="1" />
+          </p>
+        </div>
+        <button class="count" id="calculate-button" disabled>Hitung</button>
+        <div class="bottom">
+          <p>Berikut IMT kamu :</p>
+
+          <h2 id="results"></h2>
+        </div>
+        <p id="message"></p>
+      </form>
+    </div>
+    <script src="./lib/script.js"></script>
+  </body>
+</html>
